@@ -4,8 +4,8 @@ exports.createProduct = (req, res, next) => {
             message: "Create Product Success", 
             data: {
                 id: 1, 
-                name: "Sari Gandum",
-                price: 8000
+                name: req.body.name,
+                price: req.body.price
             }
         }
     );
